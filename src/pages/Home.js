@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/component/todos.js";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/component/AddTodo.js";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/pages/Home.css";
 
 class Home extends Component {
   // A default state of this component with an empty list of todos.
