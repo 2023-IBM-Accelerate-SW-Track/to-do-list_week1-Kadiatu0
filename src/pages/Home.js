@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/component/todos.js";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/component/AddTodo.js";
+import "/Users/lavender/github-classroom/2023-IBM-Accelerate-SW-Track/to-do-list_week1-Kadiatu0/src/pages/Home.css";
 
 class Home extends Component {
   // A default state of this component with an empty list of todos.
@@ -6,6 +9,7 @@ class Home extends Component {
     super();
     this.state = {
       // create your empty list here call it todos.
+      todos : [],
     };
   }
   // the addTodo function simply creates a new array that includes the user submitted todo item and then
@@ -16,7 +20,7 @@ class Home extends Component {
     // To avoid having dup values, we use the Math.random() function to generate a random value for a todo id.
     // This solution works for a small application but a more complex hashing function should be used when
     // dealing with a larger data sensitive project.
-    todo.id = Math.random();
+    todo.id= Math.random();
     // An array that contains the current array and the new todo item
     let new_list = [...this.state.todos, todo];
     // Updates the local state with the new array.
@@ -27,7 +31,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <p> Replace this</p>
+        <todos todos={this.state.todos} />
+        <addTodo addTodo={this.addTodo()} />
         <h1>Todo's </h1>
       </div>
     );
